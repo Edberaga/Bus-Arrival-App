@@ -10,7 +10,25 @@
 </head>
 
 <body>
-  
+  <main>
+    <h2>Bus Arrival App</h2>
+    <img src="bus.png" alt="Bus Arrival App" height="300px">
+    <form id="bus-form">
+      <label for="bus-number">Enter Bus Stop ID</label>
+      <input type="text" id="bus-number" required>
+      <!--Bus Id: 18141-->
+      <button type="button" onclick="searchBus()">Search</button>
+    </form>
+
+    <p id="loading" style="display: none;">Loading...</p>
+
+    <div id="display-data" style="display: none;">
+      <!-- Bus Id: 18141, Route: 1, Arrival Time: 08:30 -->
+      <h3>Bus Arrival Information</h3>
+      <ul id="display-bus-info">
+      </ul>
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
 
