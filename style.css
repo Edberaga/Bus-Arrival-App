@@ -2,3 +2,48 @@ html {
   height: 100%;
   width: 100%;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+}
+
+#bus-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+#bus-form label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#bus-form input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#bus-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(255, 67, 67);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+#display-data {
+  text-align: center;
+}
+
+#display-bus-info {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
